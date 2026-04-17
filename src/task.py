@@ -32,7 +32,7 @@ class Task:
         Преобразует задачу в строку
         :return: Строка - результат
         """
-        return f"Task( id: {self.id}, name: {self.name}, body: {self.body}, status: {self.status}, priority: {self.status} )"
+        return f"Task( id: {self.id}, name: {self.name}, body: {self.body}, status: {self.status}, priority: {self.priority} )"
 
     @classmethod
     def create(cls, json_form: Any) -> "Task":
