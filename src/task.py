@@ -12,21 +12,6 @@ class Task:
     status: int
     priority: int
 
-    def __init__(self, id: str, name: str, body: str, status: int, priority: int) -> None:
-        """
-        Инициализация задачи
-        :param id: Строка - ID
-        :param name: Строка - имя задачи
-        :param body: Строка - содержание задачи
-        :param status: Число - статус задачи
-        :param priority: Число - приоритет задача
-        """
-        self.id = id
-        self.name = name
-        self.body = body
-        self.status = status
-        self.priority = priority
-
     def __str__(self) -> str:
         """
         Преобразует задачу в строку
